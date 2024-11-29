@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portifólio - Miguel Cirino Leite</title>
+    <link rel="stylesheet" href="styles1.css">
+    <script src="page-transition.js" defer></script>
+    <link rel="shortcut icon" href="logo2.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img src="logo2.png" alt="Logo" class="logo">
+        </div>
+        <div class="container">
+            <button class="botao" onclick="toggle('sobre')">Sobre</button>
+            <button class="botao" onclick="toggle('habilidades')">Habilidades</button>
+            <button class="botao" onclick="toggle('experiencia')">Experiência</button>
+            <button class="botao" onclick="toggle('projetos')">Projetos</button>
+        </div>
+    </header>
+
+    <div class="content">
+
+        <!-- Sobre -->
+        <section id="sobre" class="section-hidden">
+            <h2>Sobre mim</h2>
+            <p>Prazer me chamo Miguel Cirino Leite, tenho 15 anos e atualmente estudo na escola: ETEC João Gomes de Araujo,
+                 meu foco é seguir na Área de analista de segurança protegendo e ajudando empresas a não serem invadidas e consequentemente terem seus dados expostos na internet.</p>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="section-hidden">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Desenvolver programas em c++</li>
+                <li>Web design com html, css e javascript</li>
+                <li>Design digital com photoshop</li>
+                <li>Manuseamento de banco de dados com Mysql e access</li>
+                <li>Criação de diagramas com Astah</li>
+            </ul>
+        </section>
+
+        <!-- Experiência -->
+        <section id="experiencia" class="section-hidden">
+            <h2>Experiência</h2>
+            <div class="job">
+                <h3> Curso de informática | Microcamp</h3>
+                <p><strong>Jan 2021 - Dez 2023</strong></p>
+                <ul>
+                    <li>Este curso foi feito antes de mim ingressar na Etec, dando início ao meu contato com a informática</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Rápido estágio em uma empresa familiar | Power Rocks</h3>
+                <p><strong>Jan 2024 - 1 mês de duração</strong></p>
+                <ul>
+                    <li>Após ingressar na Etec fiz um estágio rápido nas férias para começar a conhecer a área da informática</li>
+                    <li>Nesta empresa eu conheci diversos programas utilizados atualmente na área da informática, o principal dele foi o Power BI</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Curso de Desenvolvimento de Sistemas | Etec João Gomes de Áraujo</h3>
+                <p><strong>Jan 2024 - Atual</strong></p>
+                <ul>
+                    <li>Curso técnico que estou fazendo integrado ao ensino médio</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projetos" class="section-hidden">
+            <h2>Projetos</h2>
+            <div class="gallery">
+                <!-- Item de Galeria 1 -->
+                <div class="gallery-item">
+                    <a href="https://www.flickr.com/photos/201958069@N08/54172097543/in/dateposted-public/" target="_blank">
+                        <img src="projeto1.png" alt="Projeto 1">
+                        <div class="project-title">Projeto photoshop</div>
+                    </a>
+                </div>
+    
+                <!-- Item de Galeria 2 -->
+                <div class="gallery-item">
+                    <a href="https://aquamarine-sashenka-81.tiiny.site/" target="_blank">
+                        <img src="projeto2.PNG" alt="Projeto 2">
+                        <div class="project-title">Projeto Site Bmw</div>
+                    </a>
+                </div>
+    
+                <!-- Item de Galeria 3 -->
+                <div class="gallery-item">
+                    <a href="https://www.flickr.com/photos/201958069@N08/54172133844/in/dateposted-public/" target="_blank">
+                        <img src="projeto3.png" alt="Projeto 3">
+                        <div class="project-title">Projeto popart</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        
+
+    </div>
+    
+    
+
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+                <h3>Contato</h3>
+                <p>Entre em contato comigo através das redes sociais!</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/miguel.cx7/" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:seuemail@email.com?subject=Contato%20do%20Portfólio&body=Olá,%20Miguel!%20Gostaria%20de%20entrar%20em%20contato%20sobre%20seu%20portfólio." target="_blank" title="Gmail">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Cirin07" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <p class="footer-copy">&copy;2024 Miguel Cirino Leite. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d2f49;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+header {
+    background-color:#2d2f49;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    margin: 0 150px 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 15px;
+}
+
+header .logo {
+    width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+    display: relative;
+    left: 50px;
+}
+header .botao
+{
+     align-items: left;
+}
+
+nav {
+    background-color: midnightblue;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #3cb4e8;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+/* Garante que os elementos da página fiquem invisíveis inicialmente e depois apareçam */
+body {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Animação de fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Suaviza a transição entre os links do menu */
+nav a {
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #007BFF; /* Altera a cor do link ao passar o mouse */
+}
+
+/* Animações para o conteúdo das seções */
+section {
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Adiciona um efeito de fade para o footer */
+footer {
+    opacity: 0;
+    animation: fadeIn 1s 1s forwards;
+}
+
+/* Para o menu de navegação */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.section-hidden {
+    display: none;
+}
+.fixarRodape {
+        bottom: 0;
+        position: fixed;
+        width: 65%;
+        align-items: center;
+        justify-content: center;
+    }
+.botao{
+        border: solid 1px blue;
+        border-radius: 25px;
+        color: black;
+        background-color: white;
+        transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+        padding: 10px;
+        margin: 8px;
+        font-size: 18px;
+    }
+.botao:hover{
+        background-color: blue;
+        color: white;
+        transform: scale(1.2)
+    }
+.content{
+    margin: 0 50px 0;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.gallery-item img {
+    width: 100%;
+    height: 140px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+.project-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/* Estilo geral do rodapé */
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 0; /* Remove o padding padrão */
+    width: 100%;
+    position: fixed;
+}
+
+/* Texto de contato no rodapé */
+.footer-text {
+    position: fixed;
+    bottom: 90px; /* Fica acima da linha de direitos autorais */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10; /* Garantia de sobreposição */
+}
+
+.footer-text h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Ícones sociais */
+.social-icons {
+    position: fixed;
+    bottom: 40px; /* Fica acima da linha de direitos autorais */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 15; /* Fica acima do texto */
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0077b5; /* Destaque ao passar o mouse */
+}
+
+/* Linha de direitos autorais */
+.footer-copy {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3cb4e8;
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: #fff;
+    z-index: 15; /* Fica abaixo do texto e dos ícones */
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    footer .social-icons a {
+        font-size: 20px; /* Reduz tamanho dos ícones em telas menores */
+        margin: 0 10px;
+    }
+}
